@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slime Coloring</title>
+  <style>
+    :root {
+      --bg: #eef1ff;
+      --bg-2: #d9e2ff;
+      --text: #2f3f67;
+      --muted: #647192;
+      --card: rgba(255, 255, 255, 0.82);
+      --line: rgba(164, 182, 227, 0.55);
+      --accent: #6cc7ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 24px 20px;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(36px, 6vw, 72px);
+      line-height: 0.95;
+    }
+    .lead {
+      width: min(760px, 100%);
+      margin: 18px auto 0;
+      font-size: clamp(18px, 2.6vw, 24px);
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .hero-card,
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 0 18px 60px rgba(91, 113, 161, 0.12);
+      backdrop-filter: blur(10px);
+    }
+    .hero-card {
+      margin-top: 28px;
+      padding: 22px;
+    }
+    .hero-card img {
+      display: block;
+      width: min(860px, 100%);
+      margin: 0 auto;
+      border-radius: 22px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .section-card {
+      padding: 22px;
+    }
+    .section-card h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+    .section-card p,
+    .section-card li {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+    .section-card ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .gallery {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+    .shot {
+      background: rgba(255, 255, 255, 0.66);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 12px;
+    }
+    .shot img {
+      display: block;
+      width: 100%;
+      border-radius: 16px;
+    }
+    .shot h3 {
+      margin: 12px 4px 4px;
+      font-size: 16px;
+    }
+    .shot p {
+      margin: 0 4px 4px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .footer a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Offline Cozy Puzzle Game</p>
+      <h1>Slime Coloring</h1>
+      <p class="lead">Move connected slime groups, use limited buffer boxes, and match every adorable slime to the right color tile in a relaxing pixel-art puzzle adventure.</p>
+      <div class="hero-card">
+        <img src="appstore_assets/iphone_6.9_1320x2868/01_sort-adorable-slimes.png" alt="Slime Coloring App Store preview">
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="section-card">
+        <h2>What Makes It Fun</h2>
+        <p>Slime Coloring blends gentle color sorting with connected-group movement, making every board feel easy to read but satisfying to solve.</p>
+      </article>
+      <article class="section-card">
+        <h2>Core Features</h2>
+        <ul>
+          <li>50 offline levels with steadily increasing challenge</li>
+          <li>Connected slime group movement for intuitive controls</li>
+          <li>Limited buffer boxes for smarter puzzle planning</li>
+          <li>Calm visuals, cute slime art, and cozy feedback</li>
+        </ul>
+      </article>
+      <article class="section-card">
+        <h2>Designed For</h2>
+        <p>Players who enjoy relaxing casual puzzle games, soothing color-matching, and quick sessions that still feel rewarding.</p>
+      </article>
+    </section>
+
+    <section class="gallery">
+      <article class="shot">
+        <img src="appstore_assets/iphone_6.9_1320x2868/01_sort-adorable-slimes.png" alt="Sort Adorable Slimes screenshot">
+        <h3>Sort Adorable Slimes</h3>
+        <p>Match colors, move connected groups, and solve cozy pixel-art puzzles.</p>
+      </article>
+      <article class="shot">
+        <img src="appstore_assets/iphone_6.9_1320x2868/02_use-buffer-boxes-smartly.png" alt="Use Buffer Boxes Smartly screenshot">
+        <h3>Use Buffer Boxes Smartly</h3>
+        <p>Store slimes, regroup colors, and create room for the perfect move.</p>
+      </article>
+      <article class="shot">
+        <img src="appstore_assets/iphone_6.9_1320x2868/03_enjoy-satisfying-placement.png" alt="Enjoy Satisfying Placement screenshot">
+        <h3>Enjoy Satisfying Placement</h3>
+        <p>Watch every correct move lock into place with smooth, relaxing feedback.</p>
+      </article>
+      <article class="shot">
+        <img src="appstore_assets/iphone_6.9_1320x2868/04_play-50-offline-levels.png" alt="Play 50 Offline Levels screenshot">
+        <h3>Play 50 Offline Levels</h3>
+        <p>A cute, calming puzzle game with no internet required and progress saved on device.</p>
+      </article>
+    </section>
+
+    <p class="footer">
+      Slime Coloring • Cozy Offline Slime Puzzles • <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+</body>
+</html>
